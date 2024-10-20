@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор визиток</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Калькулятор визиток</h1>
+            <div class="form-group">
+                <label for="quantity">Количество:</label>
+                <input type="number" id="quantity" value="90" min="1">
+            </div>
+            <div class="form-group">
+                <label for="paper">Бумага:</label>
+                <select id="paper">
+                    <option value="0">Выберите бумагу</option>
+                    <option value="1">Глянцевая</option>
+                    <option value="2">Матовая</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="color">Цветность:</label>
+                <select id="color">
+                    <option value="0">Выберите цветность</option>
+                    <option value="1">Черно-белая</option>
+                    <option value="2">Цветная</option>
+                </select>
+            </div>
+            <div class="result">
+                Стоимость тиража: <span id="total">0</span> руб.
+            </div>
+        </div>
+
+        <div class="cards">
+            <h2>Примеры визиток</h2>
+
+            <!-- Визитка 1 -->
+            <div class="card">
+                <h3>Визитка 1</h3>
+                <div class="card-images">
+                    <img src="img/ch1.png" alt="Передняя часть Визитка 1">
+                    <img src="img/o.png" alt="Задняя часть Визитка 1">
+                </div>
+            </div>
+
+            <!-- Визитка 2 -->
+            <div class="card">
+                <h3>Визитка 2</h3>
+                <div class="card-images">
+                    <img src="img/ch2.png" alt="Передняя часть Визитка 2">
+                    <img src="img/ch3.png" alt="Задняя часть Визитка 2">
+                </div>
+            </div>
+
+            <!-- Визитка 3 -->
+            <div class="card">
+                <h3>Визитка 3</h3>
+                <div class="card-images">
+                    <img src="img/cv1.png" alt="Передняя часть Визитка 3">
+                    <img src="img/o.png" alt="Задняя часть Визитка 3">
+                </div>
+            </div>
+
+            <!-- Визитка 4 -->
+            <div class="card">
+                <h3>Визитка 4</h3>
+                <div class="card-images">
+                    <img src="img/cv2.png" alt="Передняя часть Визитка 4">
+                    <img src="img/ch4.png" alt="Задняя часть Визитка 4">
+                </div>
+            </div>
+
+            <!-- Визитка 5 -->
+            <div class="card">
+                <h3>Визитка 5</h3>
+                <div class="card-images">
+                    <img src="img/cv3.png" alt="Передняя часть Визитка 5">
+                    <img src="img/cv4.png" alt="Задняя часть Визитка 5">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
